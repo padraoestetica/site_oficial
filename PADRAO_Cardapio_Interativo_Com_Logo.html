@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d16">
+  <title>PADRÃO | Catálogo de serviços</title>
+  <link rel="icon" type="image/png" href="imagens/logobrowser.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <img class="logo" src="imagens/logo.jpeg" alt="Logotipo PADRÃO Estética Automotiva">
+      
+      <div class="eyebrow">Catálogo de Serviços</div>
+      <p class="lead">Escolha o tipo de veículo ou serviço, monte seu orçamento e agende pelo WhatsApp.</p>
+    </header>
+
+    <!-- CARROSSEL DE BANNERS -->
+    <div class="banner-carousel" id="bannerCarousel">
+      <div class="banner-track" id="bannerTrack">
+        
+        <div class="banner-slide" data-banner="0">
+          <!-- Para usar imagem, substitua a div abaixo por: <img src="banner1.jpg" alt="Banner 1"> -->
+          <div class="banner-placeholder">
+            <span class="badge">DESTAQUE</span>
+            <h3>Combo Lavagem + Cera</h3>
+            <p>Brilho intenso e proteção para a pintura do seu carro.</p>
+          </div>
+        </div>
+
+        <div class="banner-slide" data-banner="1">
+          <div class="banner-placeholder">
+            <span class="badge">RENOVAÇÃO</span>
+            <h3>Higienização Interna Completa</h3>
+            <p>Elimine ácaros, manchas e odores em bancos de couro ou tecido.</p>
+          </div>
+        </div>
+
+        <div class="banner-slide" data-banner="2">
+          <div class="banner-placeholder">
+            <span class="badge">PROTEÇÃO</span>
+            <h3>Polimento & Cristalização</h3>
+            <p>Revitalize o verniz e garanta aspecto de carro zero.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="banner-dots" id="bannerDots"></div>
+    </div>
+
+    <!-- NAVEGAÇÃO POR ABAS (Preenchida via JS) -->
+    <nav class="tabs" role="tablist" aria-label="Categorias" id="categoryTabs"></nav>
+
+    <!-- PAINÉIS DE SERVIÇOS -->
+    <section id="panel0" role="tabpanel" aria-labelledby="tab0" data-category="Carros de passeio">
+      <h2>Carros de passeio</h2>
+      <p class="sub">— toque em "+ Adicionar" para montar seu orçamento</p>
+      
+      <div class="service" data-name="Ducha" data-price="20">
+        <div class="service-info"><span>Ducha</span><strong>R$ 20,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar" data-price="30">
+        <div class="service-info"><span>Ducha + Secar</span><strong>R$ 30,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar + Cera" data-price="45">
+        <div class="service-info"><span>Ducha + Secar + Cera</span><strong>R$ 45,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Lavagem Completa" data-price="50">
+        <div class="service-info"><span>Lavagem Completa</span><strong>R$ 50,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Lavagem Completa + Cera" data-price="65">
+        <div class="service-info"><span>Lavagem Completa + Cera</span><strong>R$ 65,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+    </section>
+
+    <section id="panel1" role="tabpanel" aria-labelledby="tab1" data-category="Picapes" hidden>
+      <h2>Picapes</h2>
+      <p class="sub">Preços a partir de — toque em "+ Adicionar" para montar seu orçamento</p>
+      
+      <div class="service" data-name="Ducha" data-price="25">
+        <div class="service-info"><span>Ducha</span><strong>R$ 25,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar" data-price="35">
+        <div class="service-info"><span>Ducha + Secar</span><strong>R$ 35,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar + Cera" data-price="50">
+        <div class="service-info"><span>Ducha + Secar + Cera</span><strong>R$ 50,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Lavagem Completa" data-price="60">
+        <div class="service-info"><span>Lavagem Completa</span><strong>R$ 60,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Lavagem Completa + Cera" data-price="75">
+        <div class="service-info"><span>Lavagem Completa + Cera</span><strong>R$ 75,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+    </section>
+
+    <section id="panel2" role="tabpanel" aria-labelledby="tab2" data-category="Vans" hidden>
+      <h2>Vans</h2>
+      <p class="sub">Preços a partir de — toque em "+ Adicionar" para montar seu orçamento</p>
+      
+      <div class="service" data-name="Ducha" data-price="50">
+        <div class="service-info"><span>Ducha</span><strong>R$ 50,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar" data-price="60">
+        <div class="service-info"><span>Ducha + Secar</span><strong>R$ 60,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Cabine" data-price="75">
+        <div class="service-info"><span>Ducha + Cabine</span><strong>R$ 75,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Ducha + Secar + Cabine" data-price="85">
+        <div class="service-info"><span>Ducha + Secar + Cabine</span><strong>R$ 85,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+    </section>
+
+    <section id="panel3" role="tabpanel" aria-labelledby="tab3" data-category="Higienizações" hidden>
+      <h2>Higienizações</h2>
+      <p class="sub">Preços a partir de — toque em "+ Adicionar" para montar seu orçamento</p>
+      
+      <div class="service" data-name="Higienização de Couro" data-price="200">
+        <div class="service-info"><span>Higienização de Couro</span><strong>R$ 200,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Higienização Completa de Couro + Hidratação" data-price="280">
+        <div class="service-info"><span>Higienização Completa de Couro + Hidratação</span><strong>R$ 280,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Higienização de Tecidos" data-price="220">
+        <div class="service-info"><span>Higienização de Tecidos</span><strong>R$ 220,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Higienização Completa de Tecidos" data-price="300">
+        <div class="service-info"><span>Higienização Completa de Tecidos</span><strong>R$ 300,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+    </section>
+
+    <section id="panel4" role="tabpanel" aria-labelledby="tab4" data-category="Polimentos e Pintura" hidden>
+      <h2>Polimentos e Pintura</h2>
+      <p class="sub">Preços a partir de — toque em "+ Adicionar" para montar seu orçamento</p>
+      
+      <div class="service" data-name="Polimento Comercial" data-price="250">
+        <div class="service-info"><span>Polimento Comercial</span><strong>R$ 250,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Polimento + Cristalização" data-price="350">
+        <div class="service-info"><span>Polimento + Cristalização</span><strong>R$ 350,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+      <div class="service" data-name="Descontaminação de Pintura + Cristalização" data-price="150">
+        <div class="service-info"><span>Descontaminação de Pintura + Cristalização</span><strong>R$ 150,00</strong></div>
+        <button type="button" class="btn-add">+ Adicionar</button>
+      </div>
+    </section>
+
+    <footer>
+      Todos os valores são a partir de e podem variar conforme o porte, estado de conservação e avaliação do veículo.<br>
+      <strong>PADRÃO ESTÉTICA AUTOMOTIVA</strong>
+    </footer>
+  </main>
+
+  <!-- BARRA FLUTUANTE DO CARRINHO -->
+  <div class="cart-bar" id="cartBar" hidden>
+    <div class="cart-bar-content" id="openCartBtn">
+      <div class="cart-summary">
+        <span class="cart-count" id="cartCount">0 itens</span>
+        <span class="cart-total" id="cartTotal">Total est.: R$ 0,00</span>
+      </div>
+      <button type="button" class="btn-view-cart">Ver Orçamento ▲</button>
+    </div>
+  </div>
+
+  <!-- MODAL DO CARRINHO / WHATSAPP -->
+  <div class="cart-modal" id="cartModal" hidden>
+    <div class="cart-modal-backdrop" id="closeCartBackdrop"></div>
+    <div class="cart-modal-box">
+      <div class="cart-modal-header">
+        <h3>Seu Orçamento</h3>
+        <button type="button" class="btn-close-modal" id="closeCartBtn">✕</button>
+      </div>
+      
+      <div class="cart-items-list" id="cartItemsList"></div>
+
+      <div class="cart-modal-footer">
+        <div class="modal-total-row">
+          <span>Total estimado (a partir de):</span>
+          <strong id="modalTotalValue">R$ 0,00</strong>
+        </div>
+        <input type="text" id="carModelInput" class="car-input" placeholder="Qual o modelo do seu carro? (Opcional)">
+        <button type="button" class="btn-whatsapp" id="sendWhatsappBtn">
+          Enviar pedido no WhatsApp
+        </button>
+        <button type="button" class="btn-clear-cart" id="clearCartBtn">Limpar seleção</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
